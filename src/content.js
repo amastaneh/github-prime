@@ -1,17 +1,44 @@
-document.addEventListener('DOMContentLoaded', function () {
-	alert("hello")
-	console.log("GitHub Prime: DOMContentLoaded")
-	const urlParts = window.location.pathname.split('/');
-	const isCommitPage = urlParts && urlParts.length >= 4 && urlParts[2] === 'commit';
-	console.log("GitHub Prime: urlParts", urlParts)
-	if (isCommitPage) {
-		const browseAtTimeLink = document.getElementById('browse-at-time-link');
-		if (browseAtTimeLink) {
-			const newButton = browseAtTimeLink.cloneNode(true);
-			newButton.id = 'commit-details-link';
-			newButton.href = `${browseAtTimeLink.href}.patch`;
-			newButton.textContent = 'Commit Details';
-			browseAtTimeLink.parentNode.insertBefore(newButton, browseAtTimeLink.nextSibling);
-		}
-	}
+const applyPrimeFeatures = () => {
+	applyCommitDetails();
+}
+
+// =============================================================
+// Using MutationObserver to detect URL changes in SPA sites
+let handleCommitPageTimeout;
+const observer = new MutationObserver((mutations) => {
+	clearTimeout(handleCommitPageTimeout);
+	handleCommitPageTimeout = setTimeout(() => {
+		applyPrimeFeatures();
+	}, 300);  // Set a timer to reduce continuous execution
+});
+
+observer.observe(document, {
+	childList: true,
+	subtree: true,
+	attributes: true
+});
+
+// Additionally, we can listen to History API changes
+history.pushState = ((f) =>
+	function pushState() {
+		const ret = f.apply(this, arguments);
+		window.dispatchEvent(new Event('pushstate'));
+		window.dispatchEvent(new Event('locationchange'));
+		return ret;
+	})(history.pushState);
+
+history.replaceState = ((f) =>
+	function replaceState() {
+		const ret = f.apply(this, arguments);
+		window.dispatchEvent(new Event('replacestate'));
+		window.dispatchEvent(new Event('locationchange'));
+		return ret;
+	})(history.replaceState);
+
+window.addEventListener('popstate', () => {
+	window.dispatchEvent(new Event('locationchange'));
+});
+
+window.addEventListener('locationchange', () => {
+	applyPrimeFeatures();
 });

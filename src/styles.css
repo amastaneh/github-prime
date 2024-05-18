@@ -1,4 +1,7 @@
-#commit-details-link {
-	margin-left: 8px;
-  }
-  
+.prime-btn {
+    background-color: lightblue !important;
+}
+
+.prime-btn:hover {
+    background-color: lightskyblue !important;
+}
