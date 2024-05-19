@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "GitHub Prime",
-	"version": "1.0.24",
+	"version": "1.0.25",
 	"description": "Enhance your GitHub experience with advanced features and customization options.",
 	"permissions": [
 		"webNavigation",
