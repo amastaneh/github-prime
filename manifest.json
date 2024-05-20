@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "GitHub Prime",
-	"version": "1.0.25",
+	"version": "1.0.26",
 	"description": "Enhance your GitHub experience with advanced features and customization options.",
 	"permissions": [
 		"webNavigation",
@@ -30,19 +30,13 @@
 	],
 	"icons": {
 		"128": "images/icon-128.png",
-		"48": "images/icon-48.png",
-		"38": "images/icon-38.png",
-		"19": "images/icon-19.png",
-		"16": "images/icon-16.png"
+		"48": "images/icon-48.png"
 	},
 	"action": {
 		"default_popup": "src/popup.html",
 		"default_icon": {
 			"128": "images/icon-128.png",
-			"48": "images/icon-48.png",
-			"38": "images/icon-38.png",
-			"19": "images/icon-19.png",
-			"16": "images/icon-16.png"
+			"48": "images/icon-48.png"
 		}
 	}
 }

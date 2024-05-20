@@ -1,5 +1,8 @@
 const applyPrimeFeatures = () => {
-	applyCommitDetails();
+	try {
+		applyCommitDetailsInCommitPage();
+	}
+	catch (e) { }
 }
 
 // =============================================================
