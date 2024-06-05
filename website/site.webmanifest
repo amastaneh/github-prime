@@ -1,0 +1,23 @@
+{
+    "name": "GitHub Prime",
+    "short_name": "GitHub Prime",
+    "description": "GitHub Prime is a powerful Chrome extension designed to enhance your GitHub experience with advanced features and customization options. Boost your productivity with seamless integration and intuitive tools for developers.",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/images/icon-128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/icon-48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        }
+    ]
+}

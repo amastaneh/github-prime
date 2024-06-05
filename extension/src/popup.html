@@ -1,20 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8" />
 	<title>GitHub Prime</title>
-	<style>
-		body {
-			font-family: 'Nato Sans', Roboto, Arial, sans-serif;
-		}
-	</style>
+
+	<!-- ============= CSS ============= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="popup.css" />
+
+	<!-- ============= JS ============= -->
+	<script src="popup.js"></script>
 </head>
 
-<body>
-	<h1>GitHub Prime</h1>
-	<p>Enhance your GitHub experience with advanced features and customization options.</p>
+<body class="w-96">
+	<header class="flex items-center justify-between mb-4 w-full">
+		<div class="flex items-center w-full">
+			<i class="fas fa-star text-yellow-500 text-2xl"></i>
+			<h1 class="ml-2 text-xl font-bold">GitHub Prime</h1>
+		</div>
+	</header>
+	<hr class="mb-4 w-full w-96">
+
+	<div class="space-y-4 w-full">
+		<div class="flex justify-between items-center">
+			<p>Question 1111: sample lorem ipsum</p>
+			<label class="switch">
+				<label for="question1">Question 1: sample lorem ipsum</label>
+				<input type="checkbox" id="question1" data-question="question1" />
+				<span class="slider round"></span>
+			</label>
+		</div>
+		<div class="flex justify-between items-center">
+			<p>Question 2: sample lorem ipsum</p>
+			<label class="switch">
+				<input type="checkbox" data-question="question2" />
+				<span class="slider round"></span>
+			</label>
+		</div>
+		<div class="flex justify-between items-center">
+			<p>Question 3: sample lorem ipsum</p>
+			<label class="switch">
+				<input type="checkbox" data-question="question3" />
+				<span class="slider round"></span>
+			</label>
+		</div>
+		<div class="flex justify-between items-center">
+			<p>Question 4: sample lorem ipsum</p>
+			<label class="switch">
+				<input type="checkbox" data-question="question4" />
+				<span class="slider round"></span>
+			</label>
+		</div>
+		<div class="flex justify-between items-center">
+			<p>Question 5: sample lorem ipsum</p>
+			<label class="switch">
+				<input type="checkbox" data-question="question5" />
+				<span class="slider round"></span>
+			</label>
+		</div>
+	</div>
+
+	<hr class="my-4 w-full">
+
+	<footer class="flex justify-between items-center w-full">
+		<p class="text-sm">&copy; 2024 GitHub Prime</p>
+		<div class="flex space-x-4">
+			<a href="https://githubprime.com" class="text-blue-500">
+				<i class="fas fa-home"></i>
+			</a>
+			<a href="https://github.com" class="text-black">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="https://twitter.com" class="text-blue-400">
+				<i class="fab fa-twitter"></i>
+			</a>
+		</div>
+	</footer>
+
 </body>
 
 </html>

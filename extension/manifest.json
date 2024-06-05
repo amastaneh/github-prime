@@ -28,6 +28,9 @@
 			"type": "module"
 		}
 	],
+	"content_security_policy": {
+		"extension_pages": "script-src 'self'; object-src 'self'"
+	},
 	"icons": {
 		"128": "images/icon-128.png",
 		"48": "images/icon-48.png"

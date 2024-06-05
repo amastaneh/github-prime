@@ -1,0 +1,84 @@
+/* Prime colors */
+.prime-color {
+    color: #718dab;
+}
+
+.prime-border {
+    border-color: #718dab;
+}
+
+/* Foggy Background */
+.bg-foggy {
+    position: fixed;
+    top: -10;
+    left: -10;
+    width: 110%;
+    height: 110%;
+    z-index: -1; /* پشت محتوا قرار بگیرد */
+    background: radial-gradient(
+            circle at 50% 50%,
+            rgba(113, 141, 171, 0.3),
+            transparent 70%
+        ),
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(188, 207, 226, 0.3),
+            transparent 70%
+        ),
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(167, 143, 142, 0.3),
+            transparent 70%
+        ),
+        linear-gradient(
+            to top,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0)
+        );
+    background-blend-mode: overlay, normal;
+    transition: background 1s ease-out;
+    filter: blur(5px);
+}
+
+/* Button - Fork Ribbon */
+.github-fork-ribbon:before {
+    background-color: #718dab;
+}
+
+/* Button - Animate Border */
+@keyframes border-animate {
+    0% {
+        border-color: #718dab white #718dab #718dab;
+    }
+
+    20% {
+        border-color: #718dab #718dab white #718dab;
+        color: white;
+    }
+
+    40% {
+        border-color: #718dab #718dab #718dab white;
+    }
+
+    60% {
+        border-color: white #718dab #718dab #718dab;
+    }
+
+    80% {
+        border-color: #718dab white #718dab #718dab;
+        color: #a78f8e;
+    }
+
+    100% {
+        border-color: #718dab #718dab #718dab #718dab;
+        color: #a78f8e;
+    }
+}
+
+.animate-border:hover {
+    animation: border-animate 0.33s ease-out forwards;
+    transition: color 0.33s ease-out;
+}
+.animate-border:hover span {
+    animation: border-animate 0.33s ease-out forwards;
+}
