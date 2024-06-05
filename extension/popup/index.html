@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+	<title>GitHub Prime</title>
+
+	<!-- ============= CSS ============= -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+	<link rel="stylesheet" href="./main.css" />
+
+	<!-- ============= JS ============= -->
+	<script src="./main.js"></script>
+</head>
+
+<body class="w-96 rounded-lg shadow-lg">
+	<header class="flex w-full bg-prime-light p-4 text-gray-800 select-none">
+		<img src="../images/icon-48.png" alt="GitHub Prime Logo" class="w-8 h-8" />
+		<h1 class="ml-2 text-xl font-bold">
+			<a href="https://GitHubPrime.com" target="_blank" rel="noopener">GitHub Prime</a>
+		</h1>
+	</header>
+
+	<main class="text-gray-800 text-sm p-4">
+		<div class="flex flex-col space-y-4">
+			<div class="flex items-center justify-between">
+				<label for="showCommitDetails">Show commit details button</label>
+				<label class="switch">
+					<input type="checkbox" id="showCommitDetails" data-question="showCommitDetails" />
+					<span class="slider round"></span>
+				</label>
+			</div>
+		</div>
+	</main>
+
+	<footer class="flex flex-col items-center justify-center w-full p-4 bg-prime-light text-gray-800 select-none">
+		<div class="flex space-x-2 mt-2">
+			<a href="https://GitHubPrime.com" title="GitHub Prime Website" target="_blank" rel="noopener">
+				<i class="fas fa-home"></i>
+			</a>
+			<a href="https://github.com/amastaneh/github-prime" title="GitHub Prime Repository" target="_blank" rel="noopener">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="https://twitter.com/github-prime" title="GitHub Prime Twitter" target="_blank" rel="noopener">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<small class="text-xs">© 2024 <a href="https://GitHubPrime.com">GitHub Prime</a> ver 1.0.31</small>
+		</div>
+	</footer>
+
+</body>
+
+</html>

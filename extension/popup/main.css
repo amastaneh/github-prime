@@ -1,8 +1,19 @@
-/* Custom styles for the switch */
+.bg-prime {
+    background: #718dab;
+}
+
+.bg-prime-light {
+    background: #bccfe2;
+}
+
+.prime-border {
+    border-color: #718dab;
+}
+
 .switch {
     position: relative;
     display: inline-block;
-    width: 34px;
+    width: 40px;
     height: 20px;
 }
 
@@ -27,27 +38,19 @@
 .slider:before {
     position: absolute;
     content: "";
-    height: 14px;
-    width: 14px;
-    left: 3px;
-    bottom: 3px;
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
     background-color: white;
     transition: 0.4s;
     border-radius: 50%;
 }
 
 input:checked + .slider {
-    background-color: #2196f3;
+    background-color: #bccfe2;
 }
 
 input:checked + .slider:before {
-    transform: translateX(14px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
+    transform: translateX(20px);
 }
