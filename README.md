@@ -8,13 +8,12 @@ GitHub Prime is a powerful Chrome extension designed to enhance your GitHub expe
 
 ## Features
 
-- **Show commit details button:** Easily toggle commit details visibility (switch true/false).
+☑️ **Show commit details button:** Easily toggle commit details visibility.
 
 ## Screenshots
 
 ### Main Interface
 ![Main Interface](https://github.com/amastaneh/github-prime/assets/6195199/0e67c577-327a-4fa2-9407-b5ea837ca82f)
-
 
 ### Popup Menu
 ![Popup Menu](https://github.com/amastaneh/github-prime/assets/6195199/83e69c85-4329-4f76-bc68-c1bf3e491923)
