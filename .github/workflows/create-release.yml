@@ -1,0 +1,45 @@
+name: Create Release
+
+on:
+  push:
+    paths:
+      - 'extension/**' # Trigger only when changes occur in the 'extension' directory
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Read version from manifest.json
+      id: read_version
+      run: echo ::set-output name=version::$(jq -r '.version' extension/manifest.json)
+
+    - name: Create ZIP file
+      run: zip -r extension.zip extension
+
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: v${{ steps.read_version.outputs.version }}
+        release_name: Release v${{ steps.read_version.outputs.version }}
+        body: |
+          Release v${{ steps.read_version.outputs.version }}
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      id: upload-release-asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./extension.zip
+        asset_name: extension.zip
+        asset_content_type: application/zip
