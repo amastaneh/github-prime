@@ -1,4 +1,4 @@
-name: Create Release
+name: GitHub Prime > Create Release
 
 on:
   push:
