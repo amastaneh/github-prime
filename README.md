@@ -25,23 +25,30 @@ GitHub Prime is a powerful Chrome extension designed to enhance your GitHub expe
 
 ## Installation
 
-### Chrome Extension
+### Chrome Extension (Not Published Yet)
 
 1. Visit the [Chrome Web Store](https://chrome.google.com/webstore/detail/github-prime/).
 2. Click "Add to Chrome".
 3. Confirm the installation.
 
-### Edge Extension
+### Edge Extension (Not Published Yet)
 
 1. Visit the [Microsoft Edge Add-ons Store](https://microsoftedge.microsoft.com/addons/detail/github-prime/).
 2. Click "Get".
 3. Follow the prompts to install.
 
-### Firefox Extension
+### Firefox Extension (Not Published Yet)
 
 1. Visit the [Firefox Add-ons Store](https://addons.mozilla.org/en-US/firefox/addon/github-prime/).
 2. Click "Add to Firefox".
 3. Confirm the installation.
+
+## Privacy Policy
+GitHub Prime does not collect, access, store, or retain any user data, ensuring your privacy is completely protected. All code used in this extension is open source and available for review on GitHub, allowing users to verify its integrity. We do not use any remote code, which means no external scripts or programs are executed.
+
+The sole purpose of GitHub Prime is to enhance your GitHub experience by providing advanced features and customization options. These improvements are achieved without accessing or storing any personal information. Users can confidently use the extension, knowing that their data is neither accessed nor stored by us.
+
+Our commitment to transparency and security means that our code is open for inspection. We welcome feedback and are always ready to improve the extension if any issues are identified. For more details or to review our source code, please visit our GitHub repository at https://github.com/amastaneh/github-prime.
 
 ## License
 
