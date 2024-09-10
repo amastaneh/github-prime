@@ -1,6 +1,6 @@
 # GitHub Prime
 
-[![Version](https://img.shields.io/badge/version-1.0.33-brightgreen)](https://githubprime.com) 
+[![Version](https://img.shields.io/badge/version-1.0.35-brightgreen)](https://githubprime.com) 
 [![License](https://img.shields.io/badge/license-AGPL--3.0-blue)](LICENSE) 
 [![Twitter](https://img.shields.io/twitter/follow/githubprime?style=social)](https://x.com/githubprime)
 
